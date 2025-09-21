@@ -11,7 +11,7 @@ Design, train, and evaluate RNN/LSTM models for PM2.5 prediction.
 
 Fine-tune the model and run multiple experiments to optimize performance, with a target Root Mean Squared Error (RMSE) below 4000 on the Kaggle leaderboard.
 
-Dataset
+## Dataset
 
 The dataset for this project is provided through the Kaggle competition and includes:
 
@@ -23,7 +23,7 @@ sample_submission.csv: Submission format for Kaggle.
 
 The dataset contains air quality readings, meteorological data, and temporal features. Preprocessing steps include handling missing values, feature scaling, and creating sequential data for model input.
 
-Model Design
+## Model Design
 
 The primary model used in this project is an LSTM network. The architecture that achieved the best performance includes:
 
@@ -39,7 +39,7 @@ Learning rate: 0.001
 
 The model was trained on historical sequences of 17 features, capturing both air quality and weather parameters. Early stopping and multiple experiments were used to fine-tune the model for optimal RMSE.
 
-Experiments
+## Experiments
 
 A series of experiments were conducted to evaluate model performance with different hyperparameters and sequence lengths. Key parameters include:
 
@@ -57,7 +57,7 @@ Number of epochs
 
 The results were summarized in a table to compare the effect of each configuration on validation RMSE and model stability.
 
-Results
+## Results
 
 The final LSTM model achieved a validation RMSE of approximately 75.18 with a sequence length of 48 timesteps, outperforming shorter sequences. Key observations:
 
@@ -67,7 +67,7 @@ Dropout helped reduce overfitting without significantly impacting convergence.
 
 Model performance is sensitive to batch size and learning rate adjustments.
 
-Usage Instructions
+## Usage Instructions
 Installation
 
 Clone the repository:
@@ -76,7 +76,7 @@ git clone <your-github-repo-link>
 cd air-quality-forecasting
 
 
-Install dependencies:
+## Install dependencies:
 
 pip install -r requirements.txt
 
